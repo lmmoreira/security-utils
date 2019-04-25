@@ -1,0 +1,83 @@
+<?xml version="1.0"?>
+<!DOCTYPE facelet-taglib PUBLIC "-//Sun Microsystems, Inc.//DTD Facelet Taglib 1.0//EN" "facelet-taglib_1_0.dtd">
+<facelet-taglib>
+    <namespace>http://br.eximia.security-utils/security-tags</namespace>
+      
+    <tag>
+        <tag-name>isAuthenticated</tag-name>
+        <source>resources/security-tags/isAuthenticated.xhtml</source>
+    </tag>
+      
+    <tag>
+        <tag-name>isNotAuthenticated</tag-name>
+        <source>resources/security-tags/isNotAuthenticated.xhtml</source>
+    </tag>
+    
+    <tag>
+        <tag-name>ifAreAllGranted</tag-name>
+        <source>resources/security-tags/ifAreAllGranted.xhtml</source>
+    </tag>
+    
+    <tag>
+        <tag-name>ifAreAnyGranted</tag-name>
+        <source>resources/security-tags/ifAreAnyGranted.xhtml</source>
+    </tag>
+      
+    <tag>
+        <tag-name>ifAreNotGranted</tag-name>
+        <source>resources/security-tags/ifAreNotGranted.xhtml</source>
+    </tag>  
+	
+	<tag>
+        <tag-name>userName</tag-name>
+        <source>resources/security-tags/userName.xhtml</source>
+    </tag>  
+	
+	<tag>
+        <tag-name>roles</tag-name>
+        <source>resources/security-tags/roles.xhtml</source>
+    </tag>  
+	 
+	<function>
+	  	<function-name>isAuthenticated</function-name>
+	  	<function-class>br.eximia.securityutils.SecurityUtils</function-class>
+	  	<function-signature>boolean isAuthenticated()</function-signature>
+	</function>
+    
+	<function>
+	  	<function-name>isNotAuthenticated</function-name>
+	  	<function-class>br.eximia.securityutils.SecurityUtils</function-class>
+	  	<function-signature>boolean isNotAuthenticated()</function-signature>
+	</function>
+	
+	<function>
+	  	<function-name>ifAreAllGranted</function-name>
+	  	<function-class>br.eximia.securityutils.SecurityUtils</function-class>
+	  	<function-signature>boolean ifAreAllGranted(java.lang.String)</function-signature>
+	</function>
+	
+	<function>
+	  	<function-name>ifAreAnyGranted</function-name>
+	  	<function-class>br.eximia.securityutils.SecurityUtils</function-class>
+	  	<function-signature>boolean ifAreAnyGranted(java.lang.String)</function-signature>
+	</function>
+	
+	<function>
+	  	<function-name>ifAreNotGranted</function-name>
+	  	<function-class>br.eximia.securityutils.SecurityUtils</function-class>
+	  	<function-signature>boolean ifAreNotGranted(java.lang.String)</function-signature>
+	</function>
+	
+	<function>
+	  	<function-name>userName</function-name>
+	  	<function-class>br.eximia.securityutils.SecurityUtils</function-class>
+	  	<function-signature>String userName()</function-signature>
+	</function>
+	
+	<function>
+	  	<function-name>roles</function-name>
+	  	<function-class>br.eximia.securityutils.SecurityUtils</function-class>
+	  	<function-signature>String roles()</function-signature>
+	</function>
+     	
+</facelet-taglib>
